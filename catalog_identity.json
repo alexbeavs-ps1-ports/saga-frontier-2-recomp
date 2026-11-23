@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "SaGa Frontier 2",
+    "id": "SLUS-00933",
+    "boot_exe": "SLUS_009.33"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "SaGa Frontier 2 (USA).cue",
+    "bin_name": "SaGa Frontier 2 (USA).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 713312208,
+      "md5": "1ae5bc2d47b0785e827eeedd01fbf92b",
+      "sha1": "ac25dc3878ba70d32113d5d821fac5775a797bce",
+      "crc32": "b9a1ceed"
+    },
+    "disc_fp": "62834d54a0e53bcc2a768ddbbaafc7dac7938cb2db718bbdb6a4f232f9eb2f79"
+  },
+  "exe": {
+    "load_address": "0x8001F000",
+    "entry_pc": "0x80038E70",
+    "text_size": "0x00071000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 837,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
